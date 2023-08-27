@@ -1,0 +1,16 @@
+<xzs-header></xzs-header>
+
+<view class="news">
+	<view class="content">
+		<view class="box" wx:for="{{newsArr}}" wx:key="index">
+			<xzs-news-item item="{{item}}"></xzs-news-item>
+		</view>
+	</view>
+	<view class="loadingOut">
+		<van-loading size="24px" wx:if="{{load}}">加载中...</van-loading>
+		<view class="load" wx:else>没有更多数据了~</view>
+	</view>
+</view>
+
+
+<xzs-footer></xzs-footer>

@@ -1,0 +1,37 @@
+<!-- 页面跳转方式：1.使用组件navigator 2.使用事件的方式进行跳转 -->
+<!-- 注意传参方式：1.使用url中＋？promara 2.使用属性进行传参eg：data-id="{{item._id}} -->
+<view class="product" bind:tap="clickPro" data-id="{{item._id}}">
+  <view class="pic">
+    <image class="image" mode="widthFix" src="{{item.picpath}}"></image>
+  </view>
+  <view class="text">
+    <view class="title">{{item.title}}</view>
+    <view class="info">
+
+      <view class="row">
+        <view class="left"><text space="emsp">货 号：</text></view>
+        <view class="right">{{item.pronum}}</view>
+      </view>
+
+      <view class="row">
+        <view class="left"><text space="emsp">等 级：</text></view>
+        <view class="right">{{item.grade}}</view>
+      </view>
+
+      <view class="row">
+        <view class="left"><text space="emsp">年 份：</text></view>
+        <view class="right">{{item.year}}</view>
+      </view>
+
+      <view class="row">
+        <view class="left">净含量：</view>
+        <view class="right">{{item.weight}}</view>
+      </view>
+
+      <view class="row">
+        <view class="left">零售价：</view>
+        <view class="right">{{item.price}}</view>
+      </view> 
+    </view>
+  </view>
+</view>
